@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="multimedia_displaybmp" id="34" x="121" y="18">
-    <field name="BMP">YAAAAAAAAAY</field>
+  <block type="led_select" id="89" inline="true" x="103" y="293">
+    <field name="ACTION">ON</field>
     <next>
       <block type="controls_repeat" id="1" inline="true">
         <value name="TIMES">
