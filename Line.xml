@@ -14,12 +14,12 @@
                 <field name="NUM">3948</field>
               </block>
             </value>
-            <next>
-              <block type="movement_stop" id="29"></block>
-            </next>
           </block>
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="29"></block>
+    </next>
   </block>
 </xml>
