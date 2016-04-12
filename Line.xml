@@ -1,30 +1,44 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="104" x="115" y="179">
+  <block type="oled_cleardisplay" id="104" x="35" y="224">
     <next>
-      <block type="oled_drawtext" id="220">
-        <field name="TEXT"></field>
+      <block type="oled_setcursor" id="256" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="272">
+            <field name="NUM">20</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="279">
+            <field name="NUM">10</field>
+          </block>
+        </value>
         <next>
-          <block type="controls_repeat" id="1" inline="true">
-            <value name="TIMES">
-              <block type="math_number" id="2">
-                <field name="NUM">2</field>
-              </block>
-            </value>
-            <statement name="DO">
-              <block type="movement_forward" id="53">
-                <next>
-                  <block type="robot_delay" id="4" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="5">
-                        <field name="NUM">3948</field>
-                      </block>
-                    </value>
+          <block type="oled_drawtext" id="220">
+            <field name="TEXT">HIHIHIHIHIHIHI</field>
+            <next>
+              <block type="controls_repeat" id="1" inline="true">
+                <value name="TIMES">
+                  <block type="math_number" id="2">
+                    <field name="NUM">2</field>
                   </block>
+                </value>
+                <statement name="DO">
+                  <block type="movement_forward" id="53">
+                    <next>
+                      <block type="robot_delay" id="4" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="5">
+                            <field name="NUM">3948</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="movement_stop" id="6"></block>
                 </next>
               </block>
-            </statement>
-            <next>
-              <block type="movement_stop" id="6"></block>
             </next>
           </block>
         </next>
