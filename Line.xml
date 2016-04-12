@@ -1,30 +1,28 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="multimedia_displaybmp" id="34" x="118" y="-49">
     <field name="BMP">YAAAAAAAAAY</field>
-    <next>
-      <block type="controls_repeat" id="1" inline="true">
-        <value name="TIMES">
-          <block type="math_number" id="2">
-            <field name="NUM">2</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="53">
-            <next>
-              <block type="robot_delay" id="4" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="5">
-                    <field name="NUM">3948</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </statement>
+  </block>
+  <block type="controls_repeat" id="1" inline="true" x="112" y="44">
+    <value name="TIMES">
+      <block type="math_number" id="2">
+        <field name="NUM">2</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="53">
         <next>
-          <block type="movement_stop" id="6"></block>
+          <block type="robot_delay" id="4" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="5">
+                <field name="NUM">3948</field>
+              </block>
+            </value>
+          </block>
         </next>
       </block>
+    </statement>
+    <next>
+      <block type="movement_stop" id="6"></block>
     </next>
   </block>
   <block type="movement_reverse" id="20" disabled="true" x="248" y="203"></block>
